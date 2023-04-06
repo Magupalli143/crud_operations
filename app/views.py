@@ -11,3 +11,8 @@ def webpage_display(request):
     l=Webpage.objects.all()
     d={'webpage':l}
     return render(request,'webpage_display.html',d)
+
+def records_display(request):
+    l1=AccessRecords.objects.all()
+    d={'access':l1}
+    return render(request,'records_display.html',d)
